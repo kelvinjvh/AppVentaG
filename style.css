@@ -167,7 +167,6 @@ tbody tr:hover {
   .formventas{
     width: 90%;
   }
- 
 }
 
 @media (max-width:430px){
@@ -177,6 +176,7 @@ tbody tr:hover {
   .panelventas{
     width: 370px;
   }
+ 
   .formproducts{
     width: 90%;
   }
