@@ -12,8 +12,10 @@
   width: 100%;
 }
 .panelventas {
-  padding: 1em;
-  width: 85%;
+  padding: .5em;
+  outline: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
 }
 .form-control {
   width: 50%;

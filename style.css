@@ -170,6 +170,9 @@ tbody tr:hover {
   .panelform{
     width: 400px;
   }
+  .panelventas{
+    width: 370px;
+  }
   .formproducts{
     width: 90%;
   }
