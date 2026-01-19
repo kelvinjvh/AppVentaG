@@ -1,0 +1,189 @@
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  height: 100vh;
+}
+label {
+  margin-bottom: 1em;
+}
+input {
+  padding: 0.8em;
+  border: 0;
+  border-radius: 5px;
+  outline: 1px solid #ccc;
+  display: block;
+  width: 100%;
+}
+h2 {
+  margin-bottom: 1em;
+}
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.home {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  outline: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 3px;
+}
+.home h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.home .home_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.home_buttons button {
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  outline: none;
+  margin: 0 auto 1em;
+  padding: 1.5em 2em;
+  width: 200px;
+}
+.buttons_operations {
+  padding: 0.5em;
+  outline: 1px solid #ccc;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.showElement {
+  display: block;
+}
+.hiddenElement {
+  display: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+  overflow-x: scroll;
+}
+
+/* Header */
+.panelform {
+  outline: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 3px;
+  width: 80%;
+}
+thead {
+  background: #2c3e50;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: justify;
+  white-space: nowrap;
+}
+
+/* Filas */
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  color: #111;
+}
+
+tbody tr:hover {
+  background: #e4e4e4;
+}
+
+/* Acciones */
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 6px;
+}
+.btnactions {
+  font-size: 1.2em;
+  padding: 0.2em;
+}
+.table_container {
+  width: 100%;
+  max-height: 400px; /* o la altura que quieras */
+  overflow-x: auto; /* scroll horizontal si la tabla es ancha */
+  overflow-y: auto; /* scroll vertical si la tabla es alta */
+  border: 1px solid #ccc; /* opcional */
+}
+/* @media (max-width: 800px) {
+    .panelform {
+    width: 90%;
+  }
+  .formproducts{
+    width: 90%;
+  }
+  .form-controlproducts{
+    width: 90%;
+  }
+
+}
+@media (max-width: 400px) {
+  .home{
+    width: 100%;
+  }
+ button{
+  width: 300px;
+ } 
+
+} */
+@media (max-width:768px){
+  .panelform{
+    width: 90%;
+  }
+  .formproducts{
+    width: 90%;
+  }
+}
+
+@media (max-width:430px){
+  .panelform{
+    width: 400px;
+  }
+  .formproducts{
+    width: 90%;
+  }
+}
+@media (max-width:414px){
+  .panelform{
+    width: 100%;
+  }
+  .panelform{
+   width: 370px;
+  }
+}
+@media (max-width:375px){
+  .panelform{
+    width: 360px;
+  }
+}

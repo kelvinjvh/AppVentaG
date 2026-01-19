@@ -1,0 +1,61 @@
+
+
+.container_ventas {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+.container_center {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+}
+.panelventas {
+  padding: 1em;
+  width: 85%;
+}
+.form-control {
+  width: 50%;
+  margin-bottom: 1.5em;
+}
+.form-control input {
+  display: block;
+}
+.formventas {
+  position: absolute;
+  background-color: #fff;
+  width: 70%;
+  height: 90%;
+  color: #111;
+  border-radius: 3px;
+  overflow-x: scroll;
+}
+.rowform {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.formventas button {
+  padding: 1em;
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+select {
+  background-color: #f0f0f0; /* fondo del select */
+  color: #111; /* color del texto */
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+option {
+  background-color: #fff; /* fondo de cada opción */
+  color: #333; /* color del texto */
+  padding: 5px;
+}
+

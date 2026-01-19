@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VentaApp</title>
+        <link rel="stylesheet" href="formproducts.css">
+        <link rel="stylesheet" href="formsales.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="colors.css" />
+
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <!-- HOME -->
+      <section class="home" id="home">
+        <h1>VentaApp</h1>
+
+        <div class="home_buttons">
+          <button class="btnshowproducts primary">📦 Productos</button>
+          <button class="btn btnshow succes btnshowventas">🛒 Ventas</button>
+        </div>
+      </section>
+
+      <!-- PANEL PRODUCTOS -->
+      <section class="panel_products hiddenElement" id="panel_products">
+        <!-- BOTÓN NUEVO -->
+        <div class="panelform" id="listTableProducts">
+          <button
+            id="btnNuevoProducto"
+            class="btnNuevoProducto panelbutton succes"
+          >
+            📝 Nuevo Producto
+          </button>
+          <button
+            id="btnregresarhome"
+            class="regresarListProducts panelbutton primary"
+          >
+            🔙 Menu
+          </button>
+          <!-- TABLA -->
+        <div class="table_container">
+            <table class="listtableproducts">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+              </tr>
+            </thead>
+            <tbody id="productsTableBody">
+              <!-- filas dinámicas -->
+            </tbody>
+          </table>
+        </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <form id="FormRegisterProduct" class="formproducts hiddenElement">
+          <h2>Registro de Producto</h2>
+
+          <div class="form-controlproducts">
+            <label>
+              Producto:</label>
+              <input autocomplete="off" type="text" name="product" id="product" required />
+            
+          </div>
+
+          <div class="form-controlproducts">
+            <label>
+              Precio:  </label>
+              <input
+                type="number"
+                name="price"
+                id="price"
+                step="0"
+                required
+                autocomplete="off" 
+              />
+          
+          </div>
+
+          <div class="form-controlproducts">
+            <label>
+              Stock:</label>
+              <input type="number" name="stock" id="stock" required autocomplete="off" />
+            
+          </div>
+
+          <div class="form-buttons form-controlproducts">
+            <button class="succes" type="submit">Guardar</button>
+            <button class="primary canelarRegistroProducto" type="button" id="btncancelregistroProduct">
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- PANEL VENTAS -->
+      <section class="container_ventas hiddenElement" id="panel_ventas">
+        <!-- BOTÓN NUEVO -->
+        <div class="container_center">
+          <div class="panelventas" id="tableventas">
+          <div>
+            <button id="btnNuevaVenta " class="btnNuevoVenta panelbutton succes">
+              ➕ Nueva Venta
+            </button>
+            <button id="btnregresarhome " class="btnregresarhome panelbutton primary">
+             🔙 Regresar
+            </button>
+          </div>
+          <!-- TABLA -->
+           <div class="table_container">
+ <table class="venta-table">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>cantidad</th>
+                <th>total</th>
+                <th>Anular</th>
+              </tr>
+            </thead>
+            <tbody id="ventaTableBody">
+              <!-- filas dinámicas -->
+            </tbody>
+          </table>
+           </div>
+         
+        </div>
+
+        <!-- FORMULARIO -->
+        <form id="RegisterFormSales" class="formventas hiddenElement">
+          <div class="rowform">
+            <h2>Registro de ventas</h2>
+
+          <div class="form-control">
+            <label>
+              Producto</label>
+              <select name="producto" id="selectproduct">
+               <option value="">Selecione</option>
+              </select>
+            
+          </div>
+
+          <div class="form-control">
+            <label>
+              Precio</label>
+              <input
+                type="number"
+                name="precio"
+                id="priceInput"
+                value="0"
+                readonly
+                required
+                panelformventas
+              />
+            
+          </div>
+          <div class="form-control">
+            <label>
+              Cantidad:</label>
+              <input
+                type="text"
+                name="cantidad"
+                id="cantidad"
+                step="1"
+                value="1"
+                required
+                panelformventas
+              />
+            
+          </div>
+          <div class="form-control">
+            <label>
+              Total:</label>
+              <input
+                type="text"
+                name="total"
+                id="total"
+                value="0"
+                readonly
+              />
+            
+          </div>
+            <div class="form-control">
+            <label>
+              Monto Recibido: </label>
+              <input
+                type="text"
+                name="precio"
+                id="montorecibido"
+                value=""
+                
+              />
+           
+          </div>
+            <div class="form-control">
+            <label>
+              Vuelto:
+            </label>
+            <p id="vuelto">S/00</p>
+          </div>
+
+          <div class="form-buttons form-control">
+            <button class="succes btnguardar" type="submit">Guardar</button>
+            <button class="primary btncancelarventa" type="button" id="btncancel">Cancelar</button>
+          </div>
+          </div>
+        </form>
+        </div>
+      </section>
+    </div>
+  
+    </div>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="appventas.js"></script>
+  </body>
+</html>

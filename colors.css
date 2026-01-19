@@ -1,0 +1,19 @@
+.succes {
+  background-color: #28a745;
+  color: #fff;
+}
+.primary {
+  background-color: #007bff;
+  color: #fff;
+}
+.danger {
+    background-color: #dc3545;
+  color: #fff;
+}
+.warning{
+    background-color: #ffc107;
+    color: #fff;
+}
+.center{
+    text-align: center;
+}
